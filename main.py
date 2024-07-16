@@ -24,7 +24,7 @@ def get_data(input):
     
     data = yf.download(input, start=start, end=end)
     df = pd.DataFrame(data=data)
-    
+    LSTM_analysis(df)
     
     
     return
